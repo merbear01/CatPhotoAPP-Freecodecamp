@@ -15,7 +15,7 @@ Welcome to the CatPhotoApp project! This simple web application showcases variou
 To view the CatPhotoApp locally, follow these steps:
 1. Clone the repository:
    ```bash
-   git clone https://github.com/merbear01/CatPhotoApp.git
+   git clone https://github.com/merbear01/CatPhotoAPP.git
    ```
 2. Navigate to the project directory:
    ```bash
