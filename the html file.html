@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>CatPhotoApp</title>
+</head>
+<body>
+<main><!--The main element is used to represent the main content of the body of an HTML document. Content inside the main element should be unique to the document and should not be repeated in other parts of the document.-->
+    <h1>My first WebAPP Again! </h1> <!--this is the use of h1 element-->
+   <section>
+    <h2>This is silly :) </h2> <!--but it demonstrates the use of h2 -->
+    <p>This is where the lorem ipsieum goes </p> <!--This Is the use of p elements for paragraphs-->
+    <a href="https://freecatphotoapp.com"> <!--This is to turn an image into a link-->
+    <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
+    alt="A cute orange cat lying on its back"><!--The img element is used to embed images, and they have no closing tags-->
+    </a>
+    <!--The alt attribute is used for if the image fails to load, at least the user knows what to expect if it does load-->
+    <!--The text in the middle of the a element is to take you to the next page-->
+    <p>I think <a href="https://freecatphotoapp.com" target="_blank"> freecodecamp</a> is great!</p> <!--The a element is used to link another page-->
+    <!--To open links in a new tab, you can use the target attribute on the anchor (a) element.-->
+    <!--target="_blank" opens the linked document in a new tab or window-->
+   </section>
+
+    <section>
+        <h2>Cat Lists</h2>
+        <h3>Things cats love:</h3>
+        <ul> <!--This is an unordered list-->
+            <li>lactose free milk</li>
+            <li>cheese</li>
+            <li>cat nip</li>
+            <li>lasagna</li>
+        </ul> <!--This is for an unordered list-->
+        <figure>
+        <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt=" A slice of lasagna on a plate">
+            <!--figcaption is to create a fig caption and em is to for emphasis-->
+            <figcaption>Cats <em>love</em> lasagna</figcaption>
+        </figure>
+        <h3>Top 3 things cats hate:</h3>
+        <ol> <!-- This is an ordered list-->
+            <li>Flea Treatment</li>
+            <li>Thunder</li>
+            <li>Other cats</li>
+        </ol>
+        <figure>
+            <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg"
+            alt="Five cats looking around a field">
+            <figcaption>Cats <strong>hate</strong> other cats.</figcaption>
+        </figure>
+    </section>
+
+    <section>
+        <h2>Cat Form</h2>
+        <!--This is how to create a form-->
+        <form action="https://freecatphotoapp.com/submit-cat-photo">
+            <!--The input element allows you several ways to collect data from a web form. Like img elements, input elements are self-closing and do not need closing tags.-->
+            <FIELDSET> <!--The fieldset element is used to group related inputs and labels together in a web form. fieldset elements are block-level elements, meaning that they appear on a new line.-->
+            <legend>IS YOUR CAT AN INDOOR OR OUTDOOR CAT?</legend>
+                <label>
+                <input checked type="radio" id="Indoor" name="indoor-outdoor" value="indoor"> Indoor
+            </label>
+            <label>
+                <input type="radio" id="Outdoor" name="indoor-outdoor" value="outdoor"> Outdoor
+            </label>
+            </FIELDSET>
+
+            <fieldset>
+                <legend>WHAT'S YOUR CAT'S PERSONALITY?</legend>
+                <input checked id="loving" type="checkbox" name="Personality" value="loving"><label for="loving">Loving</label>
+
+                <input id="lazy" type="checkbox" name="personality" value="lazy"> <label for="lazy">Lazy</label>
+                <input id="energetic" type="checkbox" name="personality" value="Energetic"> <label for="energetic">Energetic</label>
+
+            </fieldset>
+
+            <label>
+                <input type="text" name="catphotourl" placeholder="Cat Photo URL" required>
+            </label>
+            <!--The place holder "cat photo Url in the search bar is evoked by "placeholder"attribute-->
+            <!--In order for a form's data to be accessed by the location specified in the action attribute, you must give the text field a name attribute and assign it a value to represent the data being submitted.-->
+            <!--To prevent a user from submitting your form when required information is missing, you need to add the required attribute to an input element. -->
+            <button type="submit">SUMBIT</button>
+        </form>
+    </section>
+</main>
+<footer>
+    <p>No Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a></p>
+</footer>
+</body>
+</html>
